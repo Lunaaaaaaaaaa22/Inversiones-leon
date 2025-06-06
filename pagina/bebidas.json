@@ -1,0 +1,105 @@
+{
+  "bebidas":[
+    {
+      "nombre": "Coca-Cola",
+      "imagen": "./src/assets/bebidas/coca-cola.png",
+      "presentaciones": ["250ml", "600ml","500ml(surtido)", "1L", "1.5L", "2.5L", "3L"],
+      "descripcion": "Refrescante sabor original"
+    },
+    {
+      "nombre": "Inca Kola",
+      "imagen": "./src/assets/bebidas/inka-cola.png",
+      "presentaciones": ["250ml", "500ml","500ml(surtido)", "1L", "1.5L", "2.25L", "3L"],
+      "descripcion": "Sabor nacional del Perú"
+    },
+    {
+      "nombre": "Fanta",
+      "imagen": "./src/assets/bebidas/fanta.png",
+      "presentaciones": ["355ml", "500ml", "1L", "1.5L"],
+      "descripcion": "Sabor a naranja"
+    },
+    {
+      "nombre": "Pepsi",
+      "imagen": "./src/assets/bebidas/pepsi.png",
+      "presentaciones": ["250ml", "600ml", "1L", "1.5L"],
+      "descripcion": "El sabor de una nueva generación"
+    },
+    {
+      "nombre": "Guaraná",
+      "imagen": "./src/assets/bebidas/guarana.png",
+      "presentaciones": ["350ml", "500ml", "1L"],
+      "descripcion": "Energía natural amazónica"
+    },
+    {
+      "nombre": "Kola Real",
+      "imagen": "./src/assets/bebidas/kr.png",
+      "presentaciones": ["500ml","500ml(surtido)", "1.5L", "2.25L","3L"],
+      "descripcion": "Refresco económico"
+    },
+    {
+      "nombre": "Gatorade",
+      "imagen": "./src/assets/bebidas/gatorade.png",
+      "presentaciones": ["500ml", "750ml", "1L","2.5L"],
+      "descripcion": "Rehidrata, repone y activa"
+    },
+    {
+      "nombre": "Maltín Power",
+      "imagen": "./src/assets/bebidas/maltin-power.png",
+      "presentaciones": ["355ml", "500ml"],
+      "descripcion": "Energía con sabor a malta"
+    },
+    {
+      "nombre": "Agua Cielo",
+      "imagen": "./src/assets/bebidas/cielo.png",
+      "presentaciones": ["500ml", "1L","1.5L", "2.5L"],
+      "descripcion": "Agua pura y refrescante"
+    },
+    {
+      "nombre": "Sporade",
+      "imagen": "./src/assets/bebidas/sporade.png",
+      "presentaciones": ["500ml", "1L"],
+      "descripcion": "Hidratación deportiva"
+    },
+    {
+      "nombre": "Refresco Pulp",
+      "imagen": "./src/assets/bebidas/pulp.png",
+      "presentaciones": ["250ml", "500ml"],
+      "descripcion": "Jugo para niños"
+    },
+    {
+      "nombre": "Frugos",
+      "imagen": "./src/assets/bebidas/frugos.png",
+      "presentaciones": ["250ml", "1L"],
+      "descripcion": "Jugo natural de frutas"
+    }
+  ],
+  "alcohol":[
+    {
+      "nombre": "Cerveza Cristal",
+      "imagen": "https://via.placeholder.com/300x200?text=Cristal",
+      "presentaciones": ["355ml", "620ml", "1L"],
+      "descripcion": "La cerveza del Perú"
+    },
+    {
+      "nombre": "Pisco Quebranta",
+      "imagen": "https://via.placeholder.com/300x200?text=Pisco",
+      "presentaciones": ["750ml"],
+      "descripcion": "Tradición peruana"
+    }
+  ],
+  "mas_productos":[
+    {
+      "nombre": "Papas Fritas",
+      "imagen": "https://via.placeholder.com/300x200?text=Papas+Fritas",
+      "presentaciones": ["Pequeña", "Mediana", "Grande"],
+      "descripcion": "Crujientes y doradas"
+    },
+    {
+      "nombre": "Combo Clásico",
+      "imagen": "https://via.placeholder.com/300x200?text=Combo+Clasico",
+      "presentaciones": ["Incluye bebida y snack"],
+      "descripcion": "Perfecto para compartir"
+    }
+  ]
+}
+

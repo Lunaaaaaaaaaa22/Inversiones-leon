@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inversiones Leon | Productos Premium</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Font Awesome (íconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <header id="header" class="bg-[#22356f] shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="text-2xl font-bold text-[#f0f0f0]">
+                    Inversiones Leon
+                </div>
+
+                <!-- Menú Desktop -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#header" class="text-[#f5f5dc] hover:text-[#ffe680] font-medium">Inicio</a>
+                    <a href="#nosotros" class="text-[#f5f5dc] hover:text-[#ffe680] font-medium">Nosotros</a>
+                    <a href="#local" class="text-[#f5f5dc] hover:text-[#ffe680] font-medium">Ubicacion</a>
+                    <a href="#" class="text-[#f5f5dc] hover:text-[#ffe680] font-medium">Contáctanos</a>
+                </nav>
+
+                <!-- Botón Mobile -->
+                <button id="mobileMenuButton" class="md:hidden text-gray-950">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <!-- Menú Mobile (oculto por defecto) -->
+            <div id="mobileMenu" class="mobile-menu md:hidden bg-[#22356f]">
+                <div class="flex flex-col space-y-3 pb-4">
+                    <a href="#" class="text-[#f5f5dc] hover:text-[#ffe680] py-2 px-4">Inicio</a>
+                    <a href="#nosotros" class="text-[#f5f5dc] hover:text-[#ffe680] py-2 px-4">Nosotros</a>
+                    <a href="#local" class="text-[#f5f5dc] hover:text-[#ffe680] py-2 px-4">Ubicacion</a>
+                    <a href="#" class="text-[#f5f5dc] hover:text-[#ffe680] py-2 px-4"><strong>Contáctanos</strong></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Sección Promociones -->
+    <section id="nosotros" class="py-16 bg-[#f4f7fa]">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center justify-center gap-10 max-w-6xl mx-auto">
+            <!-- Imagen (centrada y con tamaño controlado) -->
+            <div class="w-full lg:w-2/5 flex justify-center">
+                <img src="./public/logo.jpg" alt="Sobre Nosotros" 
+                     class="w-full max-w-md object-contain rounded-lg shadow-xl hover:scale-105 transition-transform duration-300">
+            </div>
+            
+            <!-- Contenido de texto (mejor jerarquía tipográfica) -->
+            <div class="w-full lg:w-3/5 text-center lg:text-left">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#95979b] mb-6 relative inline-block">
+                    <span class="relative z-10 px-4 bg-[#f4f7fa]">Sobre Nosotros</span>
+                    <span class="absolute bottom-0 left-0 w-full h-1 bg-amber-100 z-0 transform translate-y-2"></span>
+                </h2>
+                
+                <div class="space-y-4 text-gray-700">
+                    <p class="text-lg leading-relaxed">
+                        En <span class="font-semibold text-amber-600">INVERSIONES LEÓN</span> somos una bodega comprometida con brindar productos de calidad al por mayor. Nos especializamos en la venta de <span class="font-semibold text-amber-600">bebidas, golosinas, arroz y abarrotes en general</span>, ofreciendo precios competitivos y atención personalizada.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed">
+                        Trabajamos con esfuerzo, honestidad y compromiso para convertirnos en tu aliado de confianza en el abastecimiento de productos de primera necesidad.
+                    </p>
+                </div>
+                
+                <div class="mt-8 text-center lg:text-left">
+                    <p class="font-semibold text-amber-600 text-2xl mb-6 animate-pulse">
+                        ¡Tu negocio crece con nosotros!
+                    </p>
+                    <a href="#footer" class="inline-block bg-[#ff6f61] text-white px-8 py-3 rounded-lg hover:bg-[#4a6181] transition-colors duration-300 shadow-md hover:shadow-lg font-medium">
+                        Conoce más
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Carrusel de Presentaciones -->  
+   <section id="productos" class="py-16 bg-gray-200">
+    <div class="container mx-auto px-4">
+        <!-- Título -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 relative inline-block">
+                <span class="relative z-10">Nuestros <span class="text-amber-600">Productos</span></span>
+                <span class="absolute bottom-0 left-0 w-full h-3 bg-amber-100 z-0 transform translate-y-2"></span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ven y descubre mas de nuestra enorme variedad de productos</p>
+        </div>
+
+        <!-- Sección de Bebidas -->
+        <div class="bg-gradient-to-r from-[#b19cd9] via-[#8e7cc3] to-[#22356f] rounded-2xl shadow-xl p-8 border border-gray-400 max-w-6xl mx-auto mb-12">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900">
+                    <span class="border-b-4 border-amber-500 pb-2">Bebidas</span>
+                </h2>
+                <p class="mt-4 text-lg text-white">Las bebidas favoritas del momento</p>
+            </div>
+            
+            <div class="swiper-container relative">
+                <div class="swiper mySwiper bebidas-swiper">
+                    <div class="swiper-wrapper pb-12">
+                    </div>
+                    <!-- Controles personalizados -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next bg-amber-400 hover:bg-amber-600 p-3 rounded-full shadow-lg w-12 h-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev bg-amber-400 hover:bg-amber-600 p-3 rounded-full shadow-lg w-12 h-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Alcohol -->
+        <div class="bg-gradient-to-tr from-[#a3d9a5] via-[#4fd1c5] to-[#1e90ff] rounded-2xl shadow-xl p-8 border border-gray-400 max-w-6xl mx-auto mb-12">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900">
+                    <span class="border-b-4 border-amber-500 pb-2">Alcohol</span>
+                </h2>
+                <p class="mt-4 text-lg text-white">Las mejores bebidas alcohólicas</p>
+            </div>
+            
+            <div class="swiper-container relative">
+                <div class="swiper mySwiper alcohol-swiper">
+                    <div class="swiper-wrapper pb-12">
+                    </div>
+                    <!-- Controles personalizados -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next bg-amber-400 hover:bg-amber-600 p-3 rounded-full shadow-lg w-12 h-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev bg-amber-400 hover:bg-amber-600 p-3 rounded-full shadow-lg w-12 h-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Snacks -->
+        <div class="bg-gradient-to-br from-[#ff7f50] via-[#ffd1b3] to-[#e97836] rounded-2xl shadow-xl p-8 border border-gray-400 max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900">
+                    <span class="border-b-4 border-amber-500 pb-2">Snacks</span>
+                </h2>
+                <p class="mt-4 text-lg text-white">Acompaña tus bebidas con estos deliciosos snacks</p>
+            </div>
+            
+            <div class="swiper-container relative">
+                <div class="swiper mySwiper productos-swiper">
+                    <div class="swiper-wrapper pb-12">
+                        <!-- Slides se generarán dinámicamente desde JSON -->
+                    </div>
+                    <!-- Controles personalizados -->
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next bg-amber-400 hover:bg-amber-600 p-3 rounded-full shadow-lg w-12 h-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev bg-amber-400 hover:bg-amber-600 p-3 rounded-full shadow-lg w-12 h-12 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="local" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4 relative inline-block">
+                <span class="relative z-10">Visit<span class="text-amber-600">anos</span></span>
+                <span class="absolute bottom-0 left-0 w-full h-3 bg-amber-100 z-0 transform translate-y-2"></span>
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Todo lo que necesitas al por mayor, en un solo lugar! Visítanos y haz crecer tu negocio con Inversiones León.</p>
+        </div>        
+        <div class="overflow-hidden rounded-xl shadow-xl">
+            <div class="aspect-w-16 aspect-h-9 w-full">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1643.462503581632!2d-77.27005621975782!3d-11.563711878252807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9106891b639ec351%3A0xf6825b90f3478628!2sinversiones%20leon!5e0!3m2!1ses!2spe!4v1749237212433!5m2!1ses!2spe" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="w-full h-[450px] md:h-[500px]">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+<footer id="footer" class="bg-[#22356f] text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <!-- Columna 1: Navegación -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4 border-b-2 border-[#cce7ff] pb-2 inline-block">Navegación</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-amber-300 transition">Inicio</a></li>
+                    <li><a href="#nosotros" class="hover:text-amber-300 transition">Nosotros</a></li>
+                    <li><a href="#productos" class="hover:text-amber-300 transition">Productos</a></li>
+                    <li><a href="#local" class="hover:text-amber-300 transition">Ubicacion</a></li>
+                    <li><a href="#contacto" class="hover:text-amber-300 transition">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="text-center">
+                <h3 class="text-xl font-bold mb-4 border-b-2 border-[#cce7ff] pb-2 inline-block">Horario de Atención</h3>
+                <div class="space-y-2">
+                    <p>Lunes a Sábados: 7:00 AM - 5:30 PM</p>
+                    <p>Domingos: 7:00 AM - 1:00 PM</p>
+                </div>
+            </div>
+
+            <div class="text-center md:text-right">
+                <h3 class="text-xl font-bold mb-4 border-b-2 border-[#cce7ff] pb-2 inline-block">Síguenos</h3>
+                <div class="flex justify-center md:justify-end space-x-4 mb-4">
+                    <a href="#" class="text-2xl hover:text-amber-300 transition" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-amber-300 transition" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-amber-300 transition" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-amber-300 transition" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <a href="tel:+51987654321" class="hover:text-amber-300 transition">
+                        <i class="fas fa-phone-alt mr-2"></i> #Numero
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-[#cce7ff] pt-3 text-center">
+            <p>&copy; 2025 Inversiones León. Todos los derechos reservados.</p>
+            <p class="text-sm mt-2 text-amber-200">Distribuidora mayorista de bebidas y abarrotes</p>
+        </div>
+    </div>
+</footer>
+</html>
